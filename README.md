@@ -7,4 +7,9 @@ And Candidate Submitted Job Application
 When Open Page
 Then System Display Jon Application
 
-Next Step
+Feature:Application Update
+Scenario:Candidate Application Status
+Given Candidate Submitted Application
+And recruiter status "Interview"
+When Candidate login and view Application
+Then they should see status "Interview"
